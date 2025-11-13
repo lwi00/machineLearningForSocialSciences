@@ -1,0 +1,161 @@
+
+# -----------------------------
+# Python / general
+# -----------------------------
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+eggs/
+*.egg-info/
+pip-wheel-metadata/
+wheels/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# PyInstaller
+*.manifest
+*.spec
+
+# -----------------------------
+# Tests / coverage / linters
+# -----------------------------
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.coverage
+.coverage.*
+coverage.xml
+nosetests.xml
+htmlcov/
+
+# -----------------------------
+# Jupyter / notebooks
+# -----------------------------
+
+.ipynb_checkpoints/
+# Ignore notebook checkpoint files
+*.ipynb_checkpoints
+
+# -----------------------------
+# Machine learning artifacts
+# -----------------------------
+
+# Data directories (common patterns) -- keep datasets out of repo when possible
+/data/
+/datasets/
+
+# Large binary formats often produced by ML workflows
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.npz
+*.npy
+
+# Model checkpoints and weights
+models/
+checkpoints/
+saved_models/
+artifacts/
+outputs/
+results/
+logs/
+tmp/
+temp/
+
+# PyTorch / TensorFlow files
+*.pt
+*.pth
+*.ckpt
+saved_model.pb
+saved_model/
+
+# TensorBoard event files
+events.out.tfevents.*
+
+# MLflow
+mlruns/
+
+# Weights & Biases
+wandb/
+.wandb/
+
+# Neptune (if used)
+neptune/
+
+# -----------------------------
+# IDEs, editors, OS
+# -----------------------------
+
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/
+*.iml
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# -----------------------------
+# Environment / credentials
+# -----------------------------
+
+# dotenv
+.env
+.env.*
+
+# credentials and keys
+credentials.json
+secret*.json
+
+# -----------------------------
+# Misc / build artifacts
+# -----------------------------
+
+# Sphinx build
+_build/
+
+# PyBuilder
+target/
+
+# Unit test / coverage reports
+coverage/
+
+# Wheel / egg
+*.egg
+
+# Misc
+*.log
+*.pot
+*.mo
+
+# End of file
+
