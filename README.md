@@ -4,9 +4,41 @@ Guide rapide pour ce cours de ML for social sciences du master IREN. Ce guide se
 
 ## 📋 Prérequis
 
-- Python >= 3.13 (installer avec uv)
-- pip (généralement inclus avec Python)
+- Python 3.12 (installer avec uv)
+- uv (gestionnaire de versions Python et de packages)
 - git (pour cloner le repository)
+
+### Installation de uv
+
+**Sur Mac/Linux** :
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+**Sur Windows** :
+```powershell
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+### Installation de Python 3.12 avec uv
+
+Une fois uv installé, installez Python 3.12 :
+
+```bash
+uv python install 3.12
+```
+
+Pour utiliser Python 3.12 par défaut dans votre projet :
+
+```bash
+uv python pin 3.12
+```
+
+Pour vérifier la version de Python utilisée :
+
+```bash
+uv python list
+```
 
 ## 🚀 Installation
 
@@ -18,20 +50,38 @@ Guide rapide pour ce cours de ML for social sciences du master IREN. Ce guide se
    cd machineLearningForSocialSciences
    ```
 
-2. **Créer un environnement virtuel** :
+2. **Créer un environnement virtuel avec Python 3.12** :
+   
+   Avec uv (recommandé) :
+   ```bash
+   uv venv --python 3.12
+   ```
+   
+   Ou avec Python standard :
    ```bash
    python3 -m venv venv
    ```
 
 3. **Activer l'environnement virtuel** :
-   mac/Linux:
    
+   **Mac/Linux** :
    ```bash
    source venv/bin/activate
+   ```
+   
+   **Windows** :
+   ```bash
+   venv\Scripts\activate
    ```
 
 4. **Installer les dépendances** :
 
+   Avec uv (recommandé) :
+   ```bash
+   uv pip install -r requirements.txt
+   ```
+   
+   Ou avec pip standard :
    ```bash
    pip install -r requirements.txt
    ```
@@ -40,11 +90,18 @@ Guide rapide pour ce cours de ML for social sciences du master IREN. Ce guide se
 
 1. **Cloner le repository** (si ce n'est pas déjà fait) :
    ```bash
-   git clone <url-du-repo>
-   cd machineLearning
+   git clone https://github.com/lwi00/machineLearningForSocialSciences.git
+   cd machineLearningForSocialSciences
    ```
 
-2. **Créer un environnement virtuel** :
+2. **Créer un environnement virtuel avec Python 3.12** :
+   
+   Avec uv (recommandé) :
+   ```bash
+   uv venv --python 3.12
+   ```
+   
+   Ou avec Python standard :
    ```bash
    python -m venv venv
    ```
@@ -55,14 +112,16 @@ Guide rapide pour ce cours de ML for social sciences du master IREN. Ce guide se
    ```
 
 4. **Installer les dépendances** :
+
+   Avec uv (recommandé) :
    ```bash
-   pip install -e .
+   uv pip install -r requirements.txt
    ```
-   ou
+   
+   Ou avec pip standard :
    ```bash
    pip install -r requirements.txt
    ```
-   (si vous avez un fichier requirements.txt)
 
 
 
@@ -106,4 +165,5 @@ Pour contribuer ou développer de nouvelles fonctionnalités :
 ## 💡 Notes
 
 - N'oubliez pas d'activer votre environnement virtuel à chaque fois que vous travaillez sur le projet
-- Si vous rencontrez des problèmes d'installation, vérifiez que vous utilisez Python >= 3.13
+- Si vous rencontrez des problèmes d'installation, vérifiez que vous utilisez Python 3.12
+- Avec uv, vous pouvez utiliser `uv run` pour exécuter des commandes dans l'environnement virtuel sans l'activer manuellement
