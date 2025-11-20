@@ -5,9 +5,15 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "scikit-learn>=1.7.2",
-    "matplotlib>=3.10.6",
-    "numpy>=2.3.3",
-    "pandas>=2.3.2",
+    "scikit-learn==1.7.2",
+    "matplotlib==3.10.6",
+    "numpy==2.3.3",
+    "pandas==2.3.2",
     "ipykernel>=7.1.0",
+    "accelerate==1.11.0",
+    "datasets==4.4.1",
+    "evaluate==0.4.6",
+    "seaborn==0.13.2",
+    "torch==2.9.1",
+    "transformers==4.57.1",
 ]
